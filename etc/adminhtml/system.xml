@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by HTCMage
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="htcmage" translate="label" sortOrder="100">
+            <label><![CDATA[HTCMage]]></label>
+        </tab>
+        <section id="admin_notice_registration" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Admin Notice Registration</label>
+            <tab>htcmage</tab>
+            <resource>HTCMage_AdminNoticeRegistration::config_adminNoticeRegistration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+
+                <field id="list_email_to" translate="label comment" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email To</label>
+                    <comment>Comma-separated</comment>
+                </field>
+                <field id="admin_notice_registration" translate="label" type="select" sortOrder="3" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Test Tab Email Template</label>
+                    <comment>Test tab email sent to xyz.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
