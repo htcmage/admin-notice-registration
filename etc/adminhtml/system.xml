@@ -22,8 +22,8 @@
                     <comment>Comma-separated</comment>
                 </field>
                 <field id="admin_notice_registration" translate="label" type="select" sortOrder="3" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Test Tab Email Template</label>
-                    <comment>Test tab email sent to xyz.</comment>
+                    <label>Tab Email Template</label>
+                    <comment>Tab email sent to xyz.</comment>
                     <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
                 </field>
             </group>
