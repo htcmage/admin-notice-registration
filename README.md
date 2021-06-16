@@ -10,7 +10,7 @@ Admin New Customer Notification
 - Run command: `php bin/magento setup:upgrade`
 - Flush cache: `php bin/magento cache:flush`
 ### Installation by Composer
-- Run `composer require htcmage/productattachment` to install module
+- Run `composer require htcmage/adminnoticeregistration` to install module
 - Run command: `php bin/magento module:enable HTCMage_AdminNoticeRegistration`
 - Run command: `php bin/magento setup:upgrade`
 - Flush cache: `php bin/magento cache:flush`
